@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noopy Burguer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Noopy Burguer</div>
+    <nav class="nav-links">
+      <a href="#home">Início</a>
+      <a href="#menu">Cardápio</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>O melhor lanche da cidade</h1>
+        <p>Sabores artesanais, ingredientes frescos e um atendimento que faz você voltar sempre.</p>
+        <a class="btn" href="#menu">Ver cardápio</a>
+      </div>
+      <div class="hero-image">
+        <img src="./noopy-delivery.png" alt="Noopy Burguer Delivery">
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="section-header">
+        <span>Cardápio</span>
+      </div>
+      <div class="menu-salgados">
+        <div class="section-header">
+          <span>Salgados & Lanches</span>
+          <h2>Peça pelo WhatsApp</h2>
+        </div>
+        <div class="salgado-items" id="orderItems">
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Hambúrguer de forno" data-price="4.00">
+      <div class="hero-image">
+        <img src="./hamburguer-de-forno.png" alt="Hambúrguer de forno">
+      </div>
+              <h3>Hambúrguer de forno</h3>
+              <p class="menu-item-description">Clássico hambúrguer feito no forno com carne fresca, pão macio e tempero especial</p>
+              <span class="menu-item-price">R$ 4,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Hambúrguer X-Tudo" data-price="14.00">
+            <div class="hero-image">
+        <img src="./hamburguer-x-tudo.png" alt="Hambúrguer X-Tudo">
+      </div> 
+              <h3>Hambúrguer X-Tudo</h3>
+              <p class="menu-item-description">Hambúrguer completo com carne suculenta, alface, tomate, queijo derretido, bacon, ovo e molho especial</p>
+              <span class="menu-item-price">R$ 14,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Burrito" data-price="13.00">
+            <div class="hero-image">
+        <img src="./burrito.png" alt="Burrito">
+      </div>
+              <h3>Burrito</h3>
+              <p class="menu-item-description">Tortilla morna recheada com arroz, feijão, frango temperado, queijo e molhos especiais</p>
+              <span class="menu-item-price">R$ 13,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Shawarma" data-price="17.00">
+            <div class="hero-image">
+        <img src="./shawarma.png" alt="Shawarma">
+      </div>
+              <h3>Shawarma</h3>
+              <p class="menu-item-description">Carne temperada com especiarias, acompanhada de alface, tomate, cebola roxa e molho tahine caseiro</p>
+              <span class="menu-item-price">R$ 17,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pão recheado" data-price="17.00">
+            <div class="hero-image">
+        <img src="./pao-recheado.png" alt="Pão recheado">
+      </div>
+              <h3>Pão recheado</h3>
+              <p class="menu-item-description">Pão crocante recheado com frango desfiado temperado, queijo derretido e molho especial</p>
+              <span class="menu-item-price">R$ 17,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pastelão (Frango + Queijo)" data-price="10.00">
+            <div class="hero-image">
+        <img src="./pastelao.png" alt="Pastelão (Frango + Queijo)">
+      </div>
+              <h3>Pastelão (Frango + Queijo)</h3>
+              <p class="menu-item-description">Pastel crocante recheado com frango temperado e queijo derretido, acompanhado de molho</p>
+              <span class="menu-item-price">R$ 10,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pastelão (Calabresa + Queijo)" data-price="10.00">
+            <div class="hero-image">
+        <img src="./pastelao.png" alt="Pastelão (Calabresa + Queijo)">
+      </div>
+              <h3>Pastelão (Calabresa + Queijo)</h3>
+              <p class="menu-item-description">Pastel crocante com calabresa artesanal e queijo derretido, combinação perfeita</p>
+              <span class="menu-item-price">R$ 10,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pastelão (Calabresa + Frango)" data-price="10.00">
+            <div class="hero-image">
+        <img src="./pastelao.png" alt="Pastelão (Calabresa + Frango)">
+      </div>
+              <h3>Pastelão (Calabresa + Frango)</h3>
+              <p class="menu-item-description">Pastel crocante recheado com calabresa e frango desfiado, dupla deliciosa</p>
+              <span class="menu-item-price">R$ 10,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pastelão (Só Frango)" data-price="10.00">
+            <div class="hero-image">
+        <img src="./pastelao.png" alt="Pastelão (Só Frango)">
+      </div>
+              <h3>Pastelão (Só Frango)</h3>
+              <p class="menu-item-description">Pastel crocante recheado com frango temperado de forma artesanal</p>
+              <span class="menu-item-price">R$ 10,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pastelão (Só Calabresa)" data-price="10.00">
+            <div class="hero-image">
+        <img src="./pastelao.png" alt="Pastelão (Só Calabresa)">
+      </div>
+      </div>
+              <h3>Pastelão (Só Calabresa)</h3>
+              <p class="menu-item-description">Pastel crocante com calabresa artesanal suculenta e temperada na medida certa</p>
+              <span class="menu-item-price">R$ 10,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pastelão (Só Queijo)" data-price="12.00">
+            <div class="hero-image">
+        <img src="./pastelao.png" alt="Pastelão (Só Queijo)">
+      </div>
+              <h3>Pastelão (Só Queijo)</h3>
+              <p class="menu-item-description">Pastel crocante com queijo derretido e cremoso, simples e saboroso</p>
+              <span class="menu-item-price">R$ 12,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pastelão (Carne moída)" data-price="12.00">
+            <div class="hero-image">
+        <img src="./pastelao.png" alt="Pastelão (Carne moída)">
+      </div>
+              <h3>Pastelão (Carne moída)</h3>
+              <p class="menu-item-description">Pastel crocante recheado com carne moída temperada com especiarias selecionadas</p>
+              <span class="menu-item-price">R$ 12,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Pastelão (Carne moída + Queijo)" data-price="12.00">
+            <div class="hero-image">
+        <img src="./pastelao.png" alt="Pastelão (Carne moída + Queijo)">
+      </div>
+      </div>
+              <h3>Pastelão (Carne moída + Queijo)</h3>
+              <p class="menu-item-description">Pastel crocante com carne moída temperada e queijo derretido, uma combinação clássica</p>
+              <span class="menu-item-price">R$ 12,00</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Macarronada" data-price="10.00 P e 18.00 G">
+      <div class="hero-image">
+        <img src="./macarronada.png" alt="Macarronada">
+      </div>
+              <h3>Macarronada</h3>
+              <p class="menu-item-description">Um sabor inesquecível! Experimente o verdadeiro sabor de uma macarronada maranhense.</p>
+              <span class="menu-item-price">R$ 10,00 P e R$ 18,00 G</span>
+            </div>
+          </label>
+          <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Torta de Frango" data-price="20,00">
+      <div class="hero-image">
+        <img src="./torta-de-frango.png" alt="Torta de Frango">
+      </div>
+              <h3>Torta de Frango</h3>
+              <p class="menu-item-description">Uma deliciosa torta recheada com frango grelhado e temperado, perfeita para qualquer ocasião.</p>
+              <span class="menu-item-price">R$ 20,00</span>
+            </div>
+            </label>
+            <label class="menu-item">
+            <input type="checkbox" class="item-checkbox" data-name="Torta sem glúten/lactose" data-price="10.00">
+      <div class="hero-image">
+        <img src="./torta-sem-gluten-lactose.png" alt="Torta sem glúten/lactose">
+      </div>
+              <h3>Torta sem glúten/lactose</h3>
+              <p class="menu-item-description">Uma opção deliciosa para quem tem intolerância ao glúten e à lactose.</p>
+              <span class="menu-item-price">R$ 10,00</span>
+            </div>
+        </div>
+        <div class="order-summary">
+          <h3 class="delivery-title">Informações de Entrega</h3>
+          
+          <div class="delivery-form">
+            <div class="form-group">
+              <label for="clientName">Nome Completo *</label>
+              <input type="text" id="clientName" class="form-input" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+              <label for="clientPhone">Telefone *</label>
+              <input type="tel" id="clientPhone" class="form-input" placeholder="(99) 99999-9999" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clientStreet">Rua *</label>
+                <input type="text" id="clientStreet" class="form-input" placeholder="Nome da rua" required>
+              </div>
+              <div class="form-group">
+                <label for="clientNumber">Número *</label>
+                <input type="text" id="clientNumber" class="form-input" placeholder="123" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clientComplement">Complemento</label>
+              <input type="text" id="clientComplement" class="form-input" placeholder="Apto, bloco, etc (opcional)">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clientNeighborhood">Bairro *</label>
+                <input type="text" id="clientNeighborhood" class="form-input" placeholder="Seu bairro" required>
+              </div>
+              <div class="form-group">
+                <label for="clientZip">CEP</label>
+                <input type="text" id="clientZip" class="form-input" placeholder="00000-000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Método de Pagamento *</label>
+              <div class="payment-options">
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="PIX" required>
+                  <span>PIX</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="Dinheiro" required>
+                  <span>Dinheiro</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="Cartão" required>
+                  <span>Cartão</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="summary-items" id="summaryItems"></div>
+          <div class="summary-total">
+            <span>Total:</span>
+            <strong id="totalPrice">R$ 0,00</strong>
+          </div>
+          <button class="btn btn-submit" id="submitOrderBtn">Enviar Pedido</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-image"></div>
+      <div class="about-content">
+        <h2>Sobre o Noopy Burguer</h2>
+        <p>Somos apaixonados por sempre fazer o melhor e por criar combinações incríveis com ingredientes selecionados. Nossa missão é ser o seu ponto de encontro favorito para momentos especiais.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <span>Contato</span>
+        <h2>Faça seu pedido</h2>
+      </div>
+      <p>Whatsapp: <strong>(99) 98404-0006</strong></p>
+      <p>Endereço: Travessa Parque Eldorado, 1660, Centro</p>
+      <button class="btn" id="orderButton">Peça agora</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Noopy Burguer. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
